@@ -3,13 +3,11 @@
  */
 
 (function findShort(stringOfWords){
-    //split string into array of words and create a new array "l" containing the length of each word in array "stringOfWords"
-        const l = stringOfWords.split(' ').map(w => w.length);
-        console.log(l);
+    //split string into array of words and create a new array "wordLengths" containing the length of each word in array "stringOfWords"
+    const wordLengths = stringOfWords.split(' ').map(word => word.length);
 
-    // Loop through the array "l" and compare each number until the smallest is reached
-    return shortest = l.reduce(function (a, b) { return a.length < b.length ? a : b;});
+    // Loop through the array "wordLengths" and compare each number until the smallest is returned
+    console.log(shortest = wordLengths.reduce(function (a, b) { return (a < b) ? a : b;}));
 
-    //return the smallest number in array "l"
 }("bitcoin take over the world maybe who knows perhaps"));
 
